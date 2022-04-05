@@ -6,4 +6,37 @@
 .input-window {
     text-align: end;
     font-size: x-large;
+    border-radius: 0;
+    border-bottom-left-radius:  0.25rem;
+    border-bottom-right-radius:  0.25rem;
+}
+
+.show-window {
+    border: none;
+    font-size: small;
+    text-align: right;
+    padding: 0px;
+}
+
+.card-body {
+    background-color: black;
+    border-radius: 0.25rem;
+}
+
+.btn-outline-primary {
+    background-color: blue;
+    color: white;
+}
+
+.btn-outline-danger {
+    background-color: red;
+    color: white;
+}
+
+#showOperation {
+    border: none;
+    height: 40px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    color: grey;
 }
