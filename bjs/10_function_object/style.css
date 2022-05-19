@@ -1,0 +1,33 @@
+body {
+    background-color: rgb(230, 230, 230);
+}
+.card{
+    background-color: azure;
+    border-radius: .25rem;
+}
+
+.no-gutters{
+    background-color: azure;
+}
+.btn{
+    background-color: beige;
+    color: black;
+}
+
+.btn-outline-primary {
+    border-radius: 0;
+    border-bottom-left-radius: 0.25rem;
+}
+
+.btn-outline-danger {
+    border-radius: 0;
+    border-bottom-right-radius: 0.25rem;
+}
+
+.card-header {
+    background-color: rgba(202, 197, 197, 0.781);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.card-body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

@@ -7,4 +7,6 @@ window.onload = function()
     document.getElementById('genderOutput').innerText = initPerson.gender+',';
     document.getElementById('birthYearOutput').innerText = initPerson.yearOfBirth+' года рождения';
     document.getElementById('jobTitle').innerText = initPerson.job;
+    document.getElementById('cardbody').style.backgroundColor = initPerson.color;
+
 };

@@ -36,11 +36,12 @@ const personGenerator = {
         }
     }`,
     patronymicJson: `{
-        "count": 3,
+        "count": 4,
         "list": {     
             "id_1": "Валерьев",
             "id_2": "Дмитриев",
-            "id_3": "Владимиров"
+            "id_3": "Владимиров",
+            "id_4": "Всеволодов"
         }
     }`,    
     firstNameFemaleJson: `{
@@ -150,6 +151,7 @@ const personGenerator = {
         this.person = {};
         year = this.randomIntNumber(2014, 1953);
         date = '';
+
         switch (this.randomIntNumber(12, 1)) {
             case 1:
                 date = this.randomIntNumber(31, 1)+' января';
@@ -198,6 +200,7 @@ const personGenerator = {
         this.person.surname = this.randomSurname(this.person.gender);
         this.person.yearOfBirth = date+' '+year;
         this.person.job = '( '+this.randomJobTitle(this.person.gender)+' )';
+        this.person.color = (this.person.gender=='Мужчина'?'skyblue':'lightpink');
 
         return this.person;
     }
@@ -214,4 +217,5 @@ document.querySelector('#btn_clear').addEventListener('click', () => {
     document.getElementById('genderOutput').innerText = ' ';
     document.getElementById('birthYearOutput').innerText = ' ';
     document.getElementById('jobTitle').innerText = ' ';
+    document.getElementById('cardbody').style.backgroundColor = 'azure';
 })
